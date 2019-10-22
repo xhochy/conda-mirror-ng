@@ -1,4 +1,4 @@
-# conda-mirror
+# conda-mirror-ng
 
 [![Build Status](https://travis-ci.com/xhochy/conda-mirror-ng.svg?branch=master)](https://travis-ci.com/xhochy/conda-mirror-ng)
 <!-- [![PyPI version](https://badge.fury.io/py/conda-mirror-ng.svg)](https://badge.fury.io/py/conda-mirror-ng) -->
@@ -191,35 +191,13 @@ test/test_conda_mirror.py::test_handling_bad_package PASSED
 ======================================= 4 passed in 4.41 seconds =======================================
 ```
 
-### Show the coverage statistics
-
-```
-$ coverage report -m
-Name                           Stmts   Miss  Cover   Missing
-------------------------------------------------------------
-conda_mirror/__init__.py           3      0   100%
-conda_mirror/conda_mirror.py     236     20    92%   203-205, 209-210, 214, 240, 249-254, 262-264, 303, 366, 497, 542-543, 629
-------------------------------------------------------------
-TOTAL                            239     20    92%
-```
-
-## Other
-
-After a new contributor makes a pull-request that is approved, we will reach out
-and invite you to be a maintainer of the project.
-
-
 ## Releasing
 
 To release you need three things
 
 1. Commit rights to conda-mirror-ng
-2. A github token
-3. The version number that you want to use for the new tag
+2. Access to `conda-mirror-ng` on PyPI
+3. Access to `conda-mirror-ng-feedstock` on conda-forge
 
-After you have all three of these things, run the release.sh script (on a unix machine) and
-pass it the tag that you want to use and your github token:
-
-```bash
-GITHUB_TOKEN=<github_token> ./release.sh <tag>
-```
+After you have all three of these things, add a git tag, upload an sdist using
+`twine` and merge the automatically generated PR on conda-forge.
