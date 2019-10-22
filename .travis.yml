@@ -11,10 +11,8 @@ install:
 - pip install -e .
 
 script:
-- conda-mirror -h
-- coverage run --concurrency=multiprocessing run_tests.py
-- coverage combine
-- coverage report -m
+- conda-mirror-ng -h
+- pytest --cov conda_mirror_ng
 - flake8
 
 after_success:
