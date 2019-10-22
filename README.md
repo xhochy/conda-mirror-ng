@@ -1,41 +1,40 @@
 # conda-mirror
 
-[![Project Status: Inactive – The project has reached a stable, usable state but is no longer being actively developed; support/maintenance will be provided as time allows.](https://www.repostatus.org/badges/latest/inactive.svg)](https://www.repostatus.org/#inactive)
-[![Build Status](https://travis-ci.org/Valassis-Digital-Media/conda-mirror.svg?branch=master)](https://travis-ci.org/Valassis-Digital-Media/conda-mirror)
-[![PyPI version](https://badge.fury.io/py/conda-mirror.svg)](https://badge.fury.io/py/conda-mirror)
-[![codecov](https://codecov.io/gh/Valassis-Digital-Media/conda-mirror/branch/master/graph/badge.svg)](https://codecov.io/gh/Valassis-Digital-Media/conda-mirror)
+[![Build Status](https://travis-ci.com/xhochy/conda-mirror-ng.svg?branch=master)](https://travis-ci.com/xhochy/conda-mirror-ng)
+<!-- [![PyPI version](https://badge.fury.io/py/conda-mirror-ng.svg)](https://badge.fury.io/py/conda-mirror-ng) -->
+<!-- [![codecov](https://codecov.io/gh/Valassis-Digital-Media/conda-mirror/branch/master/graph/badge.svg)](https://codecov.io/gh/Valassis-Digital-Media/conda-mirror) -->
 
 Mirrors an upstream conda channel to a local directory.
 
 ## Install
 
-`conda-mirror` is available on PyPI and conda-forge.
+`conda-mirror-ng` is available on PyPI and conda-forge.
 
 Install with:
 
-`pip install conda-mirror`
+`pip install conda-mirror-ng`
 
 or:
 
-`conda install conda-mirror -c conda-forge`
+`conda install conda-mirror-ng -c conda-forge`
 
 ## Compatibility
 
-`conda-mirror` is intentionally a py3 only package
+`conda-mirror-ng` is intentionally a Py3.6+ only package
 
 ## CLI
 
-CLI interface for `conda-mirror.py`
+CLI interface for `conda-mirror-ng`
 
 ```
-usage: conda-mirror [-h] [--upstream-channel UPSTREAM_CHANNEL]
-                    [--target-directory TARGET_DIRECTORY]
-                    [--temp-directory TEMP_DIRECTORY] [--platform PLATFORM]
-                    [-v] [--config CONFIG] [--pdb] [--num-threads NUM_THREADS]
-                    [--version] [--dry-run] [--no-validate-target]
-                    [--minimum-free-space MINIMUM_FREE_SPACE]
+usage: conda-mirror-ng [-h] [--upstream-channel UPSTREAM_CHANNEL]
+                       [--target-directory TARGET_DIRECTORY]
+                       [--temp-directory TEMP_DIRECTORY] [--platform PLATFORM]
+                       [-v] [--config CONFIG] [--pdb] [--num-threads NUM_THREADS]
+                       [--version] [--dry-run] [--no-validate-target]
+                       [--minimum-free-space MINIMUM_FREE_SPACE]
 
-CLI interface for conda-mirror.py
+CLI interface for conda-mirror-ng
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -74,7 +73,7 @@ optional arguments:
 
 WARNING: Invoking this command will pull ~10GB and take at least an hour
 
-`conda-mirror --upstream-channel conda-forge --target-directory local_mirror --platform linux-64`
+`conda-mirror-ng --upstream-channel conda-forge --target-directory local_mirror --platform linux-64`
 
 ## More Details
 
@@ -214,7 +213,7 @@ and invite you to be a maintainer of the project.
 
 To release you need three things
 
-1. Commit rights to conda-mirror
+1. Commit rights to conda-mirror-ng
 2. A github token
 3. The version number that you want to use for the new tag
 
