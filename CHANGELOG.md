@@ -1,5 +1,11 @@
 # Change Log
 
+## [0.8.1](https://github.com/xhochy/conda-mirror-ng/tree/0.8.1)
+
+- Rename package to `conda-mirror-ng` and use `setuptools_scm` for versioning [\#1](https://github.com/xhochy/conda-mirror-ng/pull/1)
+
+[Full Changelog](https://github.com/xhochy/conda-mirror-ng/compare/0.8.0...0.8.1)
+
 ## [0.8.0](https://github.com/maxpoint/conda-mirror/tree/0.8.0)
 
 - Improve validation performance [\#69](https://github.com/maxpoint/conda-mirror/issues/69)
